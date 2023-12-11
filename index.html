@@ -7,20 +7,28 @@
 	<script src="script.js" defer></script>
 </head>
 <body>
-<header id="header">
-	<label for="modulo">Number</label>
-	<input type="number" min="2" value="2" id="modulo">
-	<label for="type">Type</label>
-	<select id="type">
-		<option class="option add" value="addition">Addition</option>
-		<option class="option sub" value="subtraction">Subtraction</option>
-		<option class="option mul" value="multiplication">Multiplication</option>
-	</select>
-	<label for="include-zero">Include Zero</label>
-	<input type="checkbox" id="include-zero">
-	<label for="include-self">Include Self</label>
-	<input type="checkbox" id="include-self">
-	<button id="generate">Generate</button>
+<header id="header" class="group">
+	<div id="input-group" class="group">
+		<div id="select-group" class="group">
+			<label for="modulo">Number</label>
+			<input type="number" min="2" value="2" id="modulo">
+			<label for="type">Type</label>
+			<select id="type">
+				<option class="option add" value="addition">Addition</option>
+				<option class="option sub" value="subtraction">Subtraction</option>
+				<option class="option mul" value="multiplication">Multiplication</option>
+			</select>
+		</div>
+		<div id="include-group" class="group">
+			<label for="include-zero">Include Zero</label>
+			<input type="checkbox" id="include-zero">
+			<label for="include-self">Include Self</label>
+			<input type="checkbox" id="include-self">
+		</div>
+	</div>
+	<div id="action-group" class="group">
+		<button id="generate">Generate</button>
+	</div>
 </header>
 <main id="main">
 	<table id="modulo-table"></table>

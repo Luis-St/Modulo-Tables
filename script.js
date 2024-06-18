@@ -50,7 +50,7 @@ function generateTable(number, operator, func) {
 				tr.appendChild(th);
 			} else {
 				let td = document.createElement("td");
-				td.innerHTML = (func(i, j - zero) % number).toString();
+				td.innerHTML = "<div class='entry'>" + (func(i, j - zero) % number).toString() + "</div>";
 				tr.appendChild(td);
 			}
 		}

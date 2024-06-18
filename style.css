@@ -23,6 +23,13 @@ body {
 	border: 1px solid black;
 }
 
+.entry {
+	background-color: darkgray;
+	border-radius: 4px;
+	margin: 2px;
+	text-align: center;
+}
+
 #header {
 	background-color: var(--primary-color);
 	color: white;
